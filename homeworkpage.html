@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Dashboard</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#1b1233;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:900px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:160px 180px 180px;
+    gap:15px;
+}
+
+.card{
+    background:#5b3bbd;
+    border-radius:20px;
+    padding:20px;
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.card1{
+    background:#6240cc;
+    grid-column:1;
+    grid-row:1;
+}
+
+.card2{
+    text-align:center;
+    grid-column:2;
+    grid-row:1;
+}
+
+.card3{
+    text-align:center;
+    grid-column:3;
+    grid-row:1;
+}
+
+.card4{
+    background:#6543cf;
+    grid-column:1;
+    grid-row:2;
+}
+
+.card5{
+    background:linear-gradient(135deg,#bfa9ff,#8f6fff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:2;
+    grid-row:2;
+}
+
+.card6{
+    background:#eef8ff;
+    color:#111;
+    grid-column:3;
+    grid-row:2 / span 2;
+}
+
+.card7{
+    background:#5c3ec6;
+    grid-column:1 / span 2;
+    grid-row:3;
+}
+
+
+h1{
+    font-size:72px;
+    font-weight:800;
+    text-shadow:4px 4px 0 rgba(0,0,0,.25);
+}
+
+.big{
+    font-size:68px;
+    font-weight:800;
+    text-shadow:4px 4px 0 rgba(0,0,0,.25);
+}
+
+.small{
+    margin-top:10px;
+    font-size:15px;
+}
+
+.social-title{
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+
+.btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+    padding:6px 14px;
+    border:none;
+    border-radius:20px;
+    background:#8f74ff;
+    color:white;
+    font-size:11px;
+}
+
+
+.icons{
+    display:flex;
+    gap:12px;
+    margin-top:30px;
+}
+
+.icon{
+    width:52px;
+    height:52px;
+    background:#8d74f4;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.icon img{
+    width:28px;
+    height:28px;
+    object-fit:contain;
+}
+
+
+.active{
+    font-size:16px;
+    font-weight:bold;
+}
+
+.change{
+    position:absolute;
+    top:20px;
+    right:20px;
+    color:#d9d1ff;
+}
+
+
+.design{
+    font-size:50px;
+    font-weight:bold;
+    color:white;
+    letter-spacing:2px;
+}
+
+
+.news{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#ff5757;
+    color:white;
+    padding:4px 10px;
+    border-radius:20px;
+    font-size:11px;
+}
+
+
+.chart{
+    width:100%;
+    height:100px;
+    margin-top:60px;
+}
+
+.subscribers{
+    position:absolute;
+    bottom:25px;
+    left:25px;
+    font-size:72px;
+    font-weight:500;
+}
+
+
+.learn{
+    width:280px;
+    font-size:18px;
+    font-weight:700;
+    line-height:1.4;
+}
+
+.circle1{
+    width:190px;
+    height:190px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    position:absolute;
+    right:-40px;
+    bottom:-60px;
+}
+
+.circle2{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:rgba(255,255,255,.06);
+    position:absolute;
+    right:100px;
+    bottom:-30px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Social Media Card -->
+    <div class="card card1">
+        <div class="social-title">A complete family of fonts</div>
+
+        <button class="btn">Learn More →</button>
+
+      <div class="icons">
+    <div class="icon">
+        <img src="image\Screenshot 2026-06-02 231348.png" alt="LinkedIn">
+    </div>
+
+    <div class="icon">
+        <img src="image\Screenshot 2026-06-02 231416.png" alt="YouTube">
+    </div>
+
+    <div class="icon">
+        <img src="image\Screenshot 2026-06-02 231436.png" alt="Twitter">
+    </div>
+
+    <div class="icon">
+        <img src="image\Screenshot 2026-06-02 231455.png" alt="TikTok">
+    </div>
+
+    <div class="icon">
+        <img src="image\Screenshot 2026-06-02 231511.png" alt="Facebook">
+    </div>
+</div>
+    </div>
+
+    
+    <div class="card card2">
+        <h1>25K</h1>
+        <p class="small">Weekly Likes</p>
+    </div>
+
+    <div class="card card3">
+        <div class=""></div>
+        <h1>50K</h1>
+        <p class="small">Weekly Views</p>
+    </div>
+
+    <!-- Active Users -->
+    <div class="card card4">
+        <div class="active">Active Users</div>
+        <div class="change">+54</div>
+
+        <div class="big" style="margin-top:25px;">
+            1,538
+        </div>
+    </div>
+
+    <!-- Design Card -->
+    <div class="card card5">
+        <div class="design">DESIGN</div>
+    </div>
+
+    <!-- Subscribers -->
+    <div class="card card6">
+
+        <div style="color:#5d93d1;font-size:14px;">
+            Total Subscribers
+        </div>
+
+        <div class="chart">
+           
+        </div>
+        <div class="subscribers">
+            200K
+        </div>
+    </div>
+    <!-- Bottom Banner -->
+    <div class="card card7">
+        <div class="learn">
+            A place to learn UI Design & Web Design.
+        </div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+</div>
+</body>
+</html>
