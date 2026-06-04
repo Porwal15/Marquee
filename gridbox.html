@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Grid Layout</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#1f2937;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.dashboard{
+    width:900px;
+    display:grid;
+    grid-template-columns:200px 1fr;
+    gap:15px;
+}
+
+.sidebar{
+    background:#3b82f6;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    border-radius:10px;
+}
+
+.main{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:80px 100px 180px 100px;
+    gap:10px;
+}
+
+.nav{
+    grid-column:1/4;
+    background:#2dd4bf;
+}
+
+.card{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-weight:bold;
+    border-radius:10px;
+}
+
+.users{
+    background:#38bdf8;
+}
+
+.revenue{
+    background:#22c55e;
+}
+
+.orders{
+    background:#f97316;
+}
+
+.chart{
+    grid-column:1/3;
+    background:#8b5cf6;
+}
+
+.table{
+    background:#d946ef;
+}
+
+.widget1,
+.widget2,
+.widget3{
+    background:#0ea5e9;
+}
+
+.nav,
+.chart,
+.table,
+.widget1,
+.widget2,
+.widget3,
+.users,
+.revenue,
+.orders{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:18px;
+    border-radius:10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="dashboard">
+
+    <div class="sidebar">
+        Sidebar
+    </div>
+
+    <div class="main">
+
+        <div class="nav">Top Navigation</div>
+
+        <div class="users">Users<br></div>
+
+        <div class="revenue">Revenue<br></div>
+
+        <div class="orders">Orders<br></div>
+
+        <div class="chart">Chart </div>
+
+        <div class="table">Table</div>
+
+        <div class="widget1">Widget 1</div>
+
+        <div class="widget2">Widget 2</div>
+
+        <div class="widget3">Widget 3</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
